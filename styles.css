@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Ballet', sans-serif;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglOvHHMbrA_Z6TvguUmqBS2-udf8A7w24vQzPw781SalMkYPN7wMMBFtk76LJKcCFLKEc4NrNVE2LXHTB4zPcGCe5lJoNahwRYMjECshWLKFaeN2jobQCwEG_mv1DFdDr_KWbUad_yCqkeocgzidOJ7yH3XfuW1bkr0CEdJBbKzPLirxUovs3WNAkOrBs/s1600/Green%20Watercolor%20Illustration%20Christmas%20Greeting%20Card%20%281%29.png'); /* Thay bằng link hình ảnh */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #a2a790; /* Màu nền xanh đậm */
+    color: #fff; /* Màu chữ trắng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    position: absolute; 
+    top: 50px ;
+    right: 200px; 
+    float: right; 
+}
+h2 {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    position: absolute; 
+    top: 150px ;
+    right: 30px; 
+    float: right; 
+}
+p {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    position: absolute; 
+    bottom: 120px ;
+    right: 80px; 
+    float: right; 
+}
+p.italic {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    position: absolute; 
+    bottom: 50px ;
+    right: 50px; 
+    float: right; 
+}
+/* Khung thiệp */
+.card {
+    width: 685px;
+    height: 465px;
+    border-radius: 5px; /* Bo góc */
+    text-align: center; /* Căn chữ giữa */
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng */
+    background-repeat: no-repeat; /* Không lặp hình */
+
+}
+.picture {
+    width: 685px;
+    height: 465px;
+}
+.picture1 {
+    width: 685px;
+    height: 465px;
+}
+.picture2 {
+    width: 900px;
+    height: 900px;
+}
+/* Phần chữ chính */
+.text h1 {
+    text-shadow: 2px 2px 4px #ffffff; /* Tạo bóng chữ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    font-size: 80px; /* Kích thước chữ lớn */
+    font-family: 'Ballet', serif; /* Font chữ tiêu đề */
+    color: #2e3b32; /* Màu chữ vàng nhạt */
+}
+.text h1:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Tạo hiệu ứng lấp lánh */
+    animation: shimmer 1s infinite; /* Thêm hiệu ứng nhấp nháy */
+    font-size: 90px; /* Kích thước chữ lớn */
+    font-family: 'Ballet', serif; /* Font chữ tiêu đề */
+    color: #2e3b32; /* Màu chữ vàng nhạt */
+}
+.text h2 {
+    text-shadow: 2px 2px 4px #ffffff; /* Tạo bóng chữ */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    font-size: 85px; /* Kích thước chữ lớn */
+    font-family: 'Ballet', serif; /* Font chữ tiêu đề */
+    color: #2e3b32; /* Màu chữ vàng nhạt */
+}
+.text h2:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff; /* Tạo hiệu ứng lấp lánh */
+    animation: shimmer 1s infinite; /* Thêm hiệu ứng nhấp nháy */
+    font-size: 95px; /* Kích thước chữ lớn */
+    font-family: 'Ballet', serif; /* Font chữ tiêu đề */
+    color: #2e3b32; /* Màu chữ vàng nhạt */
+}
+.text p {
+    font-size: 16px; /* Kích thước chữ nội dung */
+    font-family: 'Old+Standard+TT', sans-serif; /* Font chữ nội dung */
+    color: #2e3b32; /* Màu trắng ngà */
+}
+.text p {
+    font-size: 16px; /* Kích thước chữ nội dung */
+    font-family: 'Old+Standard+TT', sans-serif; /* Font chữ nội dung */
+    color: #2e3b32; /* Màu trắng ngà */
+}
+.text p.italic {
+    font-family: 'Xanh+Mono', sans-serif;
+    font-style: italic; /* Chữ nghiêng */
+    color: #f4b5a6; /* Màu chữ hồng nhạt */
+}
+@keyframes shimmer {
+0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+}
+100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+}
+}
+@keyframes mymove {
+0% {transform: scale(1);}
+50% {transform: scale(1.2);}
+100% {transform: scale(1);}
+}
+.zoom {
+transition: transform .2s; /* Thời gian chuyển đổi hiệu ứng */
+}
+
+.zoom:hover {
+transform: scale(1.05); /* Tỷ lệ phóng to khi rê chuột qua */
+}
+.card .snow {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    animation: fall 5s linear infinite;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(600px);
+    }
+}
+/* Chân trang */
+.footer {
+    font-family: 'Old+Standard+TT', sans-serif; 
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #c5c3bc; /* Màu xám nhạt */
+}
